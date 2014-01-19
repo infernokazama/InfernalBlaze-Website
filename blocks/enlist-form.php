@@ -11,134 +11,279 @@
                 <div class="modal-body">
                     
                     <div class="well">
-              <form action="MAILTO:mvd1409@gmail.com" method="post" enctype="text/plain">
+<form class="form-horizontal" action="MAILTO:application@infernalblaze.com" method="post" enctype="text/plain">
 Enter as much information as possible. The more we know about you, the better we can make a decision on your application. Remember, you want your application to look as good as possible. If you do not enter a lot of information, we will have a hard time understanding who you are and your application may be rejected. If you cannot enter any information into one of the boxes, put N/A or NONE. <b>ALL Answers MUST be written in <i>English</i></b>. If you do not speak English, please use <a href="http://www.translate.google.com">Google Translate</a> to translate your answers into English. If you submit an application written in anything but English, it will automatically be rejected.<br>
 <br>
+<fieldset>
 
- Clan Name: -IB- <input type="text" class="form-control" name="clanname">
- <br>
- Remember: You will start off with the -IB- Recruit Tags.
- <br>
- <br>
- What Is Your Reason For This Name?
- <br>
- <textarea class="form-control" rows="4" cols="50" name="reason" form="reason">
-</textarea>
- <br>
- Is there a specific reason you chose this name? Tell us here.
- <br>
- <br>
- Game Division: <select class="form-control">
-  <option value="No Selection">(Please Select One)</option>
-  <option value="Halo">Halo PC / CE</option>
-  <option value="WarGaming">WarGaming</option>
-  <option value="Tribes">Tribes: Ascend</option>
-  <option value="ARMA">ARMA</option>
-  <option value="PlanetSide 2">PlanetSide 2</option>
-  <option value="Killing Floor">Killing Floor</option>
-</select>
-<br>
-<br>
-Gender: <select class="form-control">
-  <option value="No Selection">(Please Select One)</option>
-  <option value="Male">Male</option>
-  <option value="Female">Female</option>
-</select>
-<br>
-<br>
-Age: <input class="form-control" type="text" name="age">
- <br>
- <br>
- Xfire or Steam?: <select class="form-control">
-  <option value="No Selection">(Please Select One)</option>
-  <option value="Xfire">Xfire</option>
-  <option value="Steam">Steam</option>
-  <option value="Both">Both</option>
-</select>
-<br>
-<br>
-Username or ID: <input class="form-control" type="text" name="username"><br>
-If you selected both, please put your Xfire account first followed by your Steam account: "Xfire ID, Steam ID"
-<br>
-<br>
-Have You Ever Cheated Before? <select class="form-control">
-  <option value="No Selection">(Please Select One)</option>
-  <option value="No">No</option>
-  <option value="Yes">Yes</option>
-  </select>
-  <br>
-  We do not condone cheating of any kind.
-  <br>
-  <br>
-  If You Selected YES, Please EXPLAIN WHY:
-  <br>
-  <textarea class="form-control" rows="4" cols="50" name="cheatreason" form="cheatreason">
-</textarea>
-<br>
-<br>
-Have You Ever Been Banned From An Infernal Blaze Server Before? <select class="form-control">
-  <option value="No Selection">(Please Select One)</option>
-  <option value="No">No</option>
-  <option value="Yes">Yes</option>
-  </select>
-  <br>
-  <br>
-    If You Selected YES, Please EXPLAIN WHY:
-  <br>
-  <textarea class="form-control" rows="4" cols="50" name="banreason" form="banreason">
-</textarea>
-<br>
-Include the name you were banned under
-<br>
-<br>
-How Did You Find Us? <select class="form-control">
-  <option value="No Selection">(Please Select One)</option>
-  <option value="Servers">Servers</option>
-  <option value="Website">Website</option>
-  <option value="Member Referral">Member Referral</option>
-  <option value="Advertisement">Advertisement</option>
-</select>
-<br>
-<br>
-If You Were Referred By A Member, Please List Their Name: <input class="form-control" type="text" name="referral">
-<br>
-<br>
-Do You Have Any Specialized Computer Skills?
-<br>
-<textarea rows="4" cols="50" class="form-control" name="skills" form="skills"></textarea>
-<br>
-This could get you promoted if you use these skills to help the clan
-<br>
-<br>
-Backup Name: <input class="form-control" type="text" name="backup">
-<br>
-In-case the name you chose has been taken already
-<br>
-<br>
-Forum Username: <input class="form-control" type="text" name="forumuser">
-<br>
-We will send you a PM (Private Message) on the forums regarding your application status
-<br>
-<br>
-Are You In More Than 5 Communities For Xfire? <select class="form-control">
-  <option value="No Selection">(Please Select One)</option>
-  <option value="No">No</option>
-  <option value="Yes">Yes</option>
-  </select>
-  <br>
-  If you're in more than 5 core communities for Xfire, we cannot send you an invite to the clan - thus we will reject your application.
-  <br>
-  <br>
-  I Understand That Once I Hit Submit That I Cannot Ask To Make ANY Changes To My Application:<select class="form-control">
-  <option value="No Selection">(Please Select One)</option>
-  <option value="Yes">Yes</option>
-  </select>
-  <br>
-  <br>
+<!-- Form Name -->
+<legend>Form Name</legend>
 
-<input type="submit" class="form-control" value="Submit">
-</form> 
+<!-- Prepended text-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="clanname">Clan Name</label>
+  <div class="col-md-5">
+    <div class="input-group">
+      <span class="input-group-addon">-IB-</span>
+      <input id="clanname" name="clanname" class="form-control" placeholder="Name" required="" type="text">
+    </div>
+    <p class="help-block">Remember: You will start off with the -IB- Recruit Tags</p>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="reason">Why Did You Choose This Name?</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="reason" name="reason">Is there a Specific Reason you chose this name? Tell us here!</textarea>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="division">Game Division (Choose One or More)</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="division-0">
+      <input name="division" id="division-0" value="Halo PC / CE" type="checkbox">
+      Halo PC / CE
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="division-1">
+      <input name="division" id="division-1" value="WarGaming Series" type="checkbox">
+      WarGaming Series
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="division-2">
+      <input name="division" id="division-2" value="Tribes: Ascend" type="checkbox">
+      Tribes: Ascend
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="division-3">
+      <input name="division" id="division-3" value="ARMA Series" type="checkbox">
+      ARMA Series
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="division-4">
+      <input name="division" id="division-4" value="Planetside 2" type="checkbox">
+      Planetside 2
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="division-5">
+      <input name="division" id="division-5" value="Killing Floor" type="checkbox">
+      Killing Floor
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Gender">Gender</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="Gender-0">
+      <input name="Gender" id="Gender-0" value="Male" checked="checked" type="radio">
+      Male
+    </label> 
+    <label class="radio-inline" for="Gender-1">
+      <input name="Gender" id="Gender-1" value="Female" type="radio">
+      Female
+    </label>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="age">Age</label>  
+  <div class="col-md-5">
+  <input id="age" name="age" placeholder="Example: 13" class="form-control input-md" required="" type="text">
+  <span class="help-block">All Ages Are Accepted!</span>  
+  </div>
+</div>
+
+<!-- Multiple Checkboxes (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="messenger">Xfire or Steam? (Choose One or More)</label>
+  <div class="col-md-4">
+    <label class="checkbox-inline" for="messenger-0">
+      <input name="messenger" id="messenger-0" value="Xfire" type="checkbox">
+      Xfire
+    </label>
+    <label class="checkbox-inline" for="messenger-1">
+      <input name="messenger" id="messenger-1" value="Steam" type="checkbox">
+      Steam
+    </label>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="userid">User ID</label>  
+  <div class="col-md-5">
+  <input id="userid" name="userid" placeholder="Xfire ID and/or Steam ID" class="form-control input-md" required="" type="text">
+  <span class="help-block">If you chose both Xfire and Seam, place your Xfire ID before your Steam ID</span>  
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="cheating">Have You Ever Cheated In Online Multiplayer Before?</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="cheating-0">
+      <input name="cheating" id="cheating-0" value="Yes" checked="checked" type="radio">
+      Yes
+    </label> 
+    <label class="radio-inline" for="cheating-1">
+      <input name="cheating" id="cheating-1" value="No" type="radio">
+      No
+    </label>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="yescheating">IF YES, Please EXPLAIN Why</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="yescheating" name="yescheating"></textarea>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="banned">Have You Ever Been Banned In An Infernal Blaze Server?</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="banned-0">
+      <input name="banned" id="banned-0" value="Yes" checked="checked" type="radio">
+      Yes
+    </label> 
+    <label class="radio-inline" for="banned-1">
+      <input name="banned" id="banned-1" value="No" type="radio">
+      No
+    </label>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="yesbanned">IF YES, Please EXPLAIN Why</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="yesbanned" name="yesbanned">Please provide as many details as possible.</textarea>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="referral">How Did You Find Us? (Choose One or More)</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="referral-0">
+      <input name="referral" id="referral-0" value="Servers" type="checkbox">
+      Servers
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="referral-1">
+      <input name="referral" id="referral-1" value="Website" type="checkbox">
+      Website
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="referral-2">
+      <input name="referral" id="referral-2" value="Referral" type="checkbox">
+      Referral
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="referral-3">
+      <input name="referral" id="referral-3" value="Advertisement" type="checkbox">
+      Advertisement
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="member_name">If You Were Referred By A Member, Please List Their Name</label>  
+  <div class="col-md-5">
+  <input id="member_name" name="member_name" placeholder="-IB-, {IB}, ‹IB›, or «IB»" class="form-control input-md" type="text">
+  <span class="help-block">Please list their tags as well if you know them.</span>  
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="skills">Do You Have Any Specalized Computer Skills?</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="skills" name="skills">Such as HTML, PHP, Java, CSS, Video Editing, Software Design, etc.</textarea>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="backup">Backup Name</label>  
+  <div class="col-md-5">
+  <input id="backup" name="backup" placeholder="Name" class="form-control input-md" required="" type="text">
+  <span class="help-block">Just In-Case the Name You Requested Above Has Already Been Taken</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="forum">Forum Username</label>  
+  <div class="col-md-5">
+  <input id="forum" name="forum" placeholder="(Enter Username)" class="form-control input-md" required="" type="text">
+  <span class="help-block">You Must Have A Registered Forum Account To Receive Notifications About Your Application</span>  
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="xifre_community">Are You In 5 or MORE Xfire Communities? (Steam Users, Always Click No)</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="xifre_community-0">
+      <input name="xifre_community" id="xifre_community-0" value="Yes" checked="checked" type="radio">
+      Yes
+    </label> 
+    <label class="radio-inline" for="xifre_community-1">
+      <input name="xifre_community" id="xifre_community-1" value="No" type="radio">
+      No
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="edits">I Understand That Once I Hit Submit That I Cannot Ask To Make ANY Changes To My Application</label>
+  <div class="col-md-4">
+    <label class="checkbox-inline" for="edits-0">
+      <input name="edits" id="edits-0" value="Yes" type="checkbox">
+      Yes
+    </label>
+    <label class="checkbox-inline" for="edits-1">
+      <input name="edits" id="edits-1" value="No" type="checkbox">
+      No
+    </label>
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-8">
+    <button id="submit" name="submit" class="btn btn-success">Submit Application</button>
+    <button id="clear" name="clear" class="btn btn-danger">Clear All Fields</button>
+  </div>
+</div>
+
+</fieldset>
 </form>
+
             </div>
                     
                     
