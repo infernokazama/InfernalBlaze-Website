@@ -1,3 +1,26 @@
+<?php
+define('IN_PHPBB', true);
+$phpbb_root_path = (defined('PHPBB_ROOT_PATH')) ? PHPBB_ROOT_PATH : './';
+$phpEx = substr(strrchr(__FILE__, '.'), 1);
+include($phpbb_root_path . 'common.' . $phpEx);
+
+// Start session management
+$user->session_begin();
+$auth->acl($user->data);
+$user->setup();
+
+    if ($user->data['user_id'] == ANONYMOUS)
+    {
+       echo 'You must have a Registered Forum Account before you can acess this Membership Application form. Please visit <a href="http//www.infernalblaze.com/forum/register.php" /a> to register a forum account.
+       
+       If you already have a Forum Account, please login before completing this.';
+    }
+
+    else
+    {
+       echo 'Thanks for logging in, ' . $user->data['username_clean'];
+    }
+    ?>
               <div class="container">
 	<div class="row">
 		<div id="myModal2" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
